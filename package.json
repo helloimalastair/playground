@@ -1,0 +1,16 @@
+{
+  "scripts": {
+		"migrate": "drizzle-kit generate:sqlite --schema=./src/schema.ts",
+    "dev": "bun run src/index.ts"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.1.11",
+    "drizzle-kit": "^0.19.13",
+    "drizzle-orm": "^0.28.6",
+    "hono": "^3.9.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "bun-types": "^1.0.7"
+  }
+}
